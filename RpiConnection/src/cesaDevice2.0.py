@@ -9,8 +9,9 @@ import RPi.GPIO as GPIO
 print ('Program is starting...')
 
 #setting up database connection
+apiKey = "ENTER API KEY"
 config = {
-    "apiKey": "IU4kftDPotea1YxDNDDi0f7FtUmwwglHyfk5Ol91",
+    "apiKey": apiKey,
     "authDomain": "testfirebaseapp-18cbd.firebaseapp.com",
     "databaseURL": "https://testfirebaseapp-18cbd-default-rtdb.firebaseio.com/",
     "storageBucket": "testfirebaseapp-18cbd.appspot.com"

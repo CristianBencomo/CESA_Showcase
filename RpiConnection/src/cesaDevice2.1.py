@@ -10,15 +10,19 @@ import RPi.GPIO as GPIO
 print ('Program is starting...')
 
 #setting up database connection
+
+apiKey = "ENTER API KEY"
 config = {
-    "apiKey": "IU4kftDPotea1YxDNDDi0f7FtUmwwglHyfk5Ol91",
+    "apiKey": apiKey,
     "authDomain": "testfirebaseapp-18cbd.firebaseapp.com",
     "databaseURL": "https://testfirebaseapp-18cbd-default-rtdb.firebaseio.com/",
     "storageBucket": "testfirebaseapp-18cbd.appspot.com"
 }
 
+fcmKEY ="ENTER KEY"
 #Getting FCM key
-push_service = FCMNotification(api_key="AAAASHtg8jo:APA91bF1iuoDe0X1fp7hf_3R7hO3AiuZQzbJvKZSdbZY4ENgMegYHZ-yizLIcR51t5daA6NbWnrVIGbd_kc6zlcMVb1JIJVX73bv6EKdhP5DT3KTfwfr0YoI8SYeVL8l8eB_8RQWxrwV") 
+#GET FCM NOTIFICATION KEY
+push_service = FCMNotification(api_key=fcmKEY) 
 FCMdb = database.child(deviceID)..child("DeviceInfo").child("FCM").get()
 FCM = FCMdb.val()
 

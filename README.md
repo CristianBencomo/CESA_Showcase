@@ -16,3 +16,6 @@ Here you can find the android studio folder of the app, yyou can see the main so
 
 * RPIConnection<br />
 Here you can find multiple pythhon scripts that were tested and used for different stages of development and functionalities, within src there are multiple versions of compartmentalized code used to test multiple functionalities, the updated merged most current version is cesaDeviceGyro2.0.py
+
+## APIs
+The source code has also been rid of APIs so that they are not publicly available
