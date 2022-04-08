@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlMap"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvCarLocation"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#FC6161"
+        android:gravity="center"
+        android:fontFamily="sans-serif-black"
+        android:text="Car Location"
+        android:textSize="25sp" />
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/fragCarLocation"
+        android:layout_below="@+id/tvCarLocation"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CarMapsActivity" />
+
+</RelativeLayout>
+
+
+

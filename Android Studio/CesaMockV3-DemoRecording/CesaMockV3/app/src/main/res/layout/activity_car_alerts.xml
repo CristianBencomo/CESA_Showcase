@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CarAlertsActivity">
+
+    <TextView
+        android:id="@+id/caralerttitle"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#FC6161"
+        android:gravity="center"
+        android:fontFamily="sans-serif-black"
+        android:text="Car Alerts"
+        android:textSize="25sp" />
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/caralerttitle"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:background="#FC6161"-->
+<!--        android:padding="20dp">-->
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvName"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginLeft="120dp"-->
+<!--            android:layout_marginBottom="15dp"-->
+<!--            android:layout_toRightOf="@+id/ivProfile"-->
+<!--            android:fontFamily="@font/bungee"-->
+<!--            android:includeFontPadding="false"-->
+<!--            android:text="Car_Alerts"-->
+<!--            android:textSize="20sp" />-->
+
+
+<!--    </RelativeLayout>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/caralerttitle">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-2dp"
+            android:layout_marginBottom="-1dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvAlerts"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+        <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="74dp"
+        android:layout_marginBottom="19dp"
+        android:text="DRAG DOWN TO LOAD MORE" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

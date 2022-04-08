@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="15dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="35dp"
+        app:cardBackgroundColor="#FC6161"
+        >
+        <!--        android:background="@drawable/curve_border"-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        >
+<!--        android:background="@drawable/curve_border"-->
+        <TextView
+            android:id="@+id/ecode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="P0420"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/urgency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ecode"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:textSize="13sp"
+            android:text="Urgency Level:" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/urgency"
+            android:textColor="@color/black"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/urgency"
+            android:textSize="13sp"
+            android:text="2" />
+
+        <TextView
+            android:id="@+id/codedescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_below="@+id/urgency"
+            android:layout_marginLeft="10dp"
+            android:textSize="13sp"
+            android:text="Urgency Description:" />
+
+        <TextView
+            android:id="@+id/UrgDes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_below="@+id/codedescription"
+            android:layout_alignStart="@+id/codedescription"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:paddingRight="10dp"
+            android:text="Repair immediately if drivability issues are present. Threat to essential system components if not repaired as soon as possible."
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/laymendef"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/UrgDes"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:textSize="13sp"
+            android:paddingRight="10dp"
+            android:text="Laymen Definition:"
+             />
+
+        <TextView
+            android:id="@+id/lamdef"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/laymendef"
+            android:layout_alignStart="@+id/laymendef"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="-1dp"
+            android:layout_marginEnd="-1dp"
+            android:paddingBottom="13dp"
+            android:text="Catalyst System Efficiency Below Threshold (Bank 1)"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+
+
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

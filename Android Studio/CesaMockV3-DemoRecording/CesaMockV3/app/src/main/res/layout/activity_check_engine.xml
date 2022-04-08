@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CheckEngineActivity">
+
+    <TextView
+        android:id="@+id/EngineCodes"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#FC6161"
+        android:gravity="center"
+        android:fontFamily="sans-serif-black"
+        android:text="Engine Codes"
+
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:orientation="vertical"
+
+        >
+
+        <TextView
+            android:id="@+id/vin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/title_radius_tint"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Your Vehicle Identification Number is:"
+            android:includeFontPadding="false"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/tvVinNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_black_boder"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:text="asd156qwd1a2sq5s"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/carcodetitle">
+
+<!--        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout-->
+<!--            android:id="@+id/swipeContainer"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_alignParentStart="true"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginStart="-2dp"-->
+<!--            android:layout_marginBottom="-1dp">-->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvCodes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+<!--        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>-->
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
