@@ -12,7 +12,7 @@ Cesa is an embedded system (prototyped in a raspberry Pi) that connects to vehic
 
 ## Navigating the Repository
 * Android Studio Folder<br />
-Here you can find the android studio folder of the app, yyou can see the main source code by navigating to CesaMockV3>app>src>main>java
+Here you can find the android studio folder of the app, yyou can see the main source code by navigating to CesaMockV3>app>src>main>java>cesamockv3
 
 * RPIConnection<br />
-Here you can find multiple pythhon scripts that were tested and used for different stages of development and functionalities, you can find an extra readme file within it
+Here you can find multiple pythhon scripts that were tested and used for different stages of development and functionalities, within src there are multiple versions of compartmentalized code used to test multiple functionalities, the updated merged most current version is cesaDeviceGyro2.0.py
